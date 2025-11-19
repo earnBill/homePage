@@ -5,20 +5,59 @@
   font-family:"Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 50px;
   background:  linear-gradient(160deg, rgba(42, 123, 155, 1) 54%, rgba(255, 255, 255, 1) 0%);
 }
 
-.profile-photo {
-  min-width: 200px;
-  min-height: 200px;
-  background: lightblue;
-  margin: 10px;
+footer i, header i {
+  font-size: 2rem;
+  color: black;
+  margin-left: 5px;
 }
 
+.photo-container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-photo {
+  max-width: 300px;
+  box-shadow: 0px 0px 4px gray;
+}
+
+.photo-header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.about-me {
+  box-shadow: 0px 0px 4px gray;
+  background-color: #f1f0ea;
+  padding: 2rem;
+  max-width: 600px;
+}
+
+.about-me-para {
+  margin: 18px 0;
+}
+
+.about-me-icons {
+  text-align: right;
+}
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,10 +80,6 @@ footer {
     color: white;
 }
 
-.photo-container, .about-me {
-  box-shadow: 0px 0px 4px gray;
-}
-
 footer {
   display: flex;
 }
@@ -58,4 +93,8 @@ footer {
 
 .right-footer {
   margin: 24px;
+}
+
+.footer-photo {
+  max-width: 250px;
 }
