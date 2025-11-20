@@ -10,12 +10,25 @@ a {
 }
 
 header {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   padding: 50px;
-  background:  linear-gradient(170deg, rgba(42, 123, 155, 1) 54%, rgba(255, 255, 255, 1) 0%);
+  /* background:  linear-gradient(170deg, rgba(42, 123, 155, 1) 54%, rgba(255, 255, 255, 1) 0%); */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 30rem;
+    background-color: rgba(42, 123, 155, 1);
+    transform-origin: 0;
+    transform: skewY(-10deg);
+    box-shadow: 0rem 0.1rem 1rem #595959;
 }
 
 footer i, header i {
@@ -32,8 +45,7 @@ footer i, header i {
 
 .profile-photo {
   max-width: 300px;
-  box-shadow:  0rem 0.1rem 1rem #595959
-;
+  box-shadow:  0rem 0.1rem 1rem #595959;
 }
 
 .photo-header {
@@ -41,8 +53,10 @@ footer i, header i {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: black;
-  margin-bottom: 10px;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 2rem;
+  text-shadow: 0.5rem 0.1rem 1rem black;
 }
 
 .about-me {
@@ -59,16 +73,25 @@ footer i, header i {
 .about-me-icons {
   text-align: right;
 }
+
+main {
+  max-width: 1200px;
+  padding: 5rem;
+  margin: auto;
+}
+
 .cards-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
 }
 
 .card {
+  max-width: 400px;
   box-shadow: 0rem 0.1rem 1rem #595959;
   background-color: lightcyan;
-  margin: 10px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 .project-footer-header {
@@ -83,6 +106,8 @@ footer {
 
 footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-footer {
@@ -92,11 +117,38 @@ footer {
   margin: 24px;
 } 
 
+.contact-info p::before {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.contact-info p{
+  display: flex;
+  align-items: center;
+}
+
+.phone::before {
+  content: "";
+  margin-right: 0.5rem;
+  background-color: white;
+  mask-image: url(images/phone.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
+.mail::before {
+  content: "";
+  margin-right: 0.5rem;
+  background-color: white;
+  mask-image: url(images/mail.svg);
+  mask-size: contain;
+  mask-repeat: no-repeat;
+}
+
 .right-footer {
   margin: 24px;
 }
 
 .footer-photo {
   max-width: 250px;
-   box-shadow: 0rem 0.1rem 1rem #595959;
+  box-shadow: 0rem 0.1rem 1rem #595959;
 }
