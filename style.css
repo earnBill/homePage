@@ -15,7 +15,7 @@ header {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  background:  linear-gradient(160deg, rgba(42, 123, 155, 1) 54%, rgba(255, 255, 255, 1) 0%);
+  background:  linear-gradient(170deg, rgba(42, 123, 155, 1) 54%, rgba(255, 255, 255, 1) 0%);
 }
 
 footer i, header i {
@@ -32,7 +32,8 @@ footer i, header i {
 
 .profile-photo {
   max-width: 300px;
-  box-shadow: 0px 0px 4px gray;
+  box-shadow:  0rem 0.1rem 1rem #595959
+;
 }
 
 .photo-header {
@@ -45,7 +46,7 @@ footer i, header i {
 }
 
 .about-me {
-  box-shadow: 0px 0px 4px gray;
+  box-shadow: 0rem 0.1rem 1rem #595959;
   background-color: #f1f0ea;
   padding: 2rem;
   max-width: 600px;
@@ -64,7 +65,7 @@ footer i, header i {
 }
 
 .card {
-  box-shadow: 0px 0px 4px gray;
+  box-shadow: 0rem 0.1rem 1rem #595959;
   background-color: lightcyan;
   margin: 10px;
   padding: 10px;
@@ -97,4 +98,5 @@ footer {
 
 .footer-photo {
   max-width: 250px;
+   box-shadow: 0rem 0.1rem 1rem #595959;
 }
