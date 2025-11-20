@@ -75,23 +75,47 @@ footer i, header i {
 }
 
 main {
-  max-width: 1200px;
-  padding: 5rem;
+  max-width: 1300px;
+  padding: 4rem;
   margin: auto;
 }
 
 .cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .card {
   max-width: 400px;
   box-shadow: 0rem 0.1rem 1rem #595959;
-  background-color: lightcyan;
-  padding: 10px;
   border-radius: 10px;
+  background-color: #f1f0ea;
+  overflow: hidden;
+}
+
+.project-screen {
+  height: 220px;
+  width: 100%;
+  /* object-fit: cover; */
+}
+
+.icons {
+  display: flex;
+}
+
+.icons img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.project-desc {
+  margin: 10px 0;
+}
+
+.project-footer {
+  padding: 1rem;
 }
 
 .project-footer-header {
