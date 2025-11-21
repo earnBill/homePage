@@ -74,6 +74,10 @@ footer i, header i {
   text-align: right;
 }
 
+.my-work {
+  margin: 25px 0;
+}
+
 main {
   max-width: 1300px;
   padding: 4rem;
@@ -124,8 +128,8 @@ main {
 }
 
 footer {
-    background: rgba(42, 123, 155, 1);
-    color: white;
+  background: rgba(42, 123, 155, 1);
+  color: white;
 }
 
 footer {
