@@ -1,2 +1,3 @@
 # homePage
-My home page
+https://earnbill.github.io/homePage/
+My personal home page!!
