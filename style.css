@@ -245,10 +245,18 @@ footer {
   header {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
   } 
 
+  .photo-container {
+    padding: 0;
+  }
   .about-me {
     margin-top: 0;
+    padding: 20px;
+    max-width: 400px;
   }
 
   .about-me-icons {
@@ -269,6 +277,9 @@ footer {
     margin: auto;
   }
 
+  .card {
+    max-width: 350px;
+  }
   .my-work {
     text-align: center;
     /* max-width: 400px;
