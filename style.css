@@ -89,6 +89,7 @@ main {
   max-width: 1300px;
   padding: 4rem;
   margin: auto;
+  padding-top: 0;
 }
 
 .cards-container {
